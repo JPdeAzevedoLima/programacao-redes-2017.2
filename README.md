@@ -1,1 +1,1 @@
-Arquivos da Disciplina de Programação para Redes, IFRN Natal Central - Curso de Tecnologia em Redes de Computadores.n Aluno: João Paulo de Azevedo Liman Turma: redes2017.1 24V56n Professor: Moisés Cirilo de Brito Souto
+Arquivos da Disciplina de Programação para Redes, IFRN Natal Central - Curso de Tecnologia em Redes de Computadores.\n Aluno: João Paulo de Azevedo Lima\n Turma: redes2017.1 24V56\n Professor: Moisés Cirilo de Brito Souto
