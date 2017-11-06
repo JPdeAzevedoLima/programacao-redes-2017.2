@@ -2,6 +2,6 @@ Arquivos da Disciplina de Programação para Redes, IFRN Natal Central - Curso d
 
 Aluno: João Paulo de Azevedo Lima
 
-Turma: redes2017.1 24V56
+Turma: redes2017.2
 
 Professor: Moisés Cirilo de Brito Souto
