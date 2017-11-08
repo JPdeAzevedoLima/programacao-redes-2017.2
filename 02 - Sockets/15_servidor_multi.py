@@ -20,6 +20,7 @@ class ThreadedServer(object):
             #Timeout do cliente
             client.settimeout(60)
             print("Conexão de: ",address)
+            #Inicializo o thread para o cliente
             threading.Thread(target = self.listenToClient,args = (client,address)).start()
 
     def listenToClient(self,client,address):
