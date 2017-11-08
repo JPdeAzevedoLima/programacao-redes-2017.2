@@ -28,13 +28,13 @@ class ThreadedServer(object):
             #Tratamento de exceção
             try:
                 data = client.recv(size)
-                print("\n Mensagem recebida: ", repr(data))
+                print("\nMensagem recebida: ",repr(data))
                 #Se receber dados, enviará de volta como um eco, a mesma mensagem
                 if data:
                     response = data
                     client.send(response)
                 else:
-                    raise error('Cliente disconectado!')
+                    raise error('Cliente desconectado!')
             #Bloco de código que deve ser executado mesmo no caso de erro
             except:
                 client.close()
