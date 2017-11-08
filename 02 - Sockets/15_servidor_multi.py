@@ -19,8 +19,8 @@ class ThreadedServer(object):
             client,address = self.sock.accept()
             #Timeout do cliente
             client.settimeout(60)
-            print("Conexão de: ", address)
-            threading.Thread(target = self.listenToClient,args = (client,address)).start
+            print("Conexão de: ",address)
+            threading.Thread(target = self.listenToClient,args = (client,address)).start()
 
     def listenToClient(self,client,address):
         size = 1024
@@ -28,13 +28,13 @@ class ThreadedServer(object):
             #Tratamento de exceção
             try:
                 data = client.recv(size)
-                print("\nMensagem recebida: ", repr(data))
-                #Se receber dados enviará de volta como um eco, a mesma mensagem
+                print("\n Mensagem recebida: ", repr(data))
+                #Se receber dados, enviará de volta como um eco, a mesma mensagem
                 if data:
                     response = data
                     client.send(response)
                 else:
-                    raise error("Cliente desconectado!")
+                    raise error('Cliente disconectado!')
             #Bloco de código que deve ser executado mesmo no caso de erro
             except:
                 client.close()
@@ -48,6 +48,5 @@ if __name__ == "__main__":
             break
         except ValueError:
             pass
-
 
     ThreadedServer('127.0.0.1',port_num).listen()
